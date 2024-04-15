@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>dovetail mu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="images/favicon.png">
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet"/> 	
+	<link href="css/font-awesome.min.css" rel="stylesheet"/> 	
+	<link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700|Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
+</head>
+<body>
+	<header class="headerTop">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="logo-mu">
+						<img src="images/logo-mu.png" />
+					</div>
+					<div class="nav-menu">
+						<ul>
+							<li class="active-anc"><a href="index.html">About Us</a></li>
+							<li><a href="team.html">Team</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="javascript:void(0);"><i class="fa fa-user"></i> Login</a></li> 
+						</ul>
+					</div>
+					<div id="menu-toggle">
+						<i class="fa fa-bars"></i>
+						<i class="fa fa-close"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="content-pagemu about-BgMu"> 
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-12 col-sm-12">
+					<div class="dovetailmu-text aboutText">
+						<h3><span>About Us</span></h3>
+						 <p>Dovetail Investment Management ('DIM') is a Private Company with Limited Liability, incorporated under the laws of Mauritius, holding a Category 1 Global Business License. DIM holds a Collective Investment (CIS) Manager License and an Investment Adviser (Unrestricted) License issued by the Financial Services Commission ('FSC'), Mauritius. It also holds a non-investing FPI Category I License issued by the Securities and Exchange Board of India ('SEBI').</p>
+						<p>The principal objective of DIM is to provide investment management and compliance services.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="disclaimer" class="disclaimer mobabout padd0"><p>Disclaimer</p></div>
+	<footer class="footer-bottom mobabout">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<p>Copyright &copy; 2017, Dovetail Investment Management</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="modal popup-muBg">
+		<div class="mu-header">
+			<div class="modal-header">
+				<h3>Disclaimer</h3>
+				<a href="javascript:void(0);" class="close-icon"><img src="images/close-icon.jpg" /></a>
+			</div>
+		</div>
+		<div class="bodymu">
+			<p>The information contained in this website is for professional investors and is only intended for professional investors as defined in your jurisdiction. Please read the relevant fund 
+documents for complete information. </p>
+			<p>The information on this website should neither be regarded as an offer nor a solicitation to buy, sell or otherwise deal with any investment referred to herein and is not intended for distribution to, or use by, any person in any country (including the United States) where the investment funds and services referred to are not authorised or registered for distribution or 
+in which the dissemination of information on the funds or services is forbidden. </p>
+			<p>The content of this website is based upon sources of information believed to be reliable. However, no guarantee, warranty or representation, express or implied, is given as to the accuracy or completeness of such information; and neither Dovetail Investment Management nor any of its officers, Directors, affiliates or employees accept any liability or responsibility in respect to the information or any recommendations expressed herein. The information in this website is subject to change without notice. 
+</p>
+		</div>
+	</div>
+	<div class="overlay-mu"></div>
+<script src="js/jquery.2.1.1.min.js" type="text/javascript"></script>
+<script>
+	$(function(){
+		$('#menu-toggle').click(function() {      
+			$(this).toggleClass('active-menu');
+	        $('.nav-menu').toggleClass('active-menu');
+	    });
+	    
+	    $('#disclaimer').click(function() {      
+	        $('.popup-muBg').show();
+	        $('.overlay-mu').show();
+			$('body').addClass('open-modal');
+	    });
+	    $('.close-icon').click(function() {      
+	        $('.popup-muBg').hide();
+	        $('.overlay-mu').hide();
+			$('body').removeClass('open-modal');
+	    });
+	});
+</script>	
+</body>
+</html>

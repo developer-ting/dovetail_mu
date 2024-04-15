@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>dovetail mu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="images/favicon.png">
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet"/> 	
+	<link href="css/font-awesome.min.css" rel="stylesheet"/> 	
+	<!--<link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700|Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />-->
+</head>
+<body>
+	<header class="headerTop">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="logo-mu">
+						<img src="images/logo-mu.png" />
+					</div>
+					<div class="nav-menu">
+						<ul>
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="team.html">Team</a></li>
+							<li class="active-anc"><a href="#">Contact</a></li>
+							<li><a href="#"><i class="fa fa-user"></i> Login</a></li> 
+						</ul>
+					</div>
+					<div id="menu-toggle">
+						<i class="fa fa-bars"></i>
+						<i class="fa fa-close"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="content-pagemu contact-BgMu"> 
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-12 col-sm-12">
+					<div class="dovetailmu-text teamText">
+						<h3><span>Contact</span></h3>
+					     <div class="map-location">					     	
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3743.376871863061!2d57.494186314451106!3d-20.243198986429174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x217c5ae2b5fa0333%3A0x5599c376e6763458!2sApex%20Fund%20Services%20(Mauritius)%20Ltd.!5e0!3m2!1sen!2sin!4v1586072774234!5m2!1sen!2sin" width="220" height="195" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					     </div> 
+					     <p>Ground Floor | 19 Bank Street | Cybercity | Ebene 72201 | Mauritius </p>
+					     <p>Direct: <a href="tel:+230 489 3096" target="_blank">+230 489 3096</a></p>
+					     <p>Email: <a href="mailto:" target="_blank">bd@dovetail.mu</a> | <a href="mailto:anuj.shah@dovetail.mu" target="_blank">anuj.shah@dovetail.mu</a> | <a href="mailto:mishakh.doshi@dovetail.mu" target="_blank">mishakh.doshi@dovetail.mu</a></p>
+					</div>
+				
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="disclaimer" class="disclaimer"><p>Disclaimer</p></div>
+	<footer class="footer-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<p>Copyright &copy; 2017, Dovetail Investment Management</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="modal popup-muBg">
+		<div class="mu-header">
+			<div class="modal-header">
+				<h3>Disclaimer</h3>
+				<a href="#" class="close-icon"><img src="images/close-icon.jpg" /></a>
+			</div>
+		</div>
+		<div class="bodymu">
+			<p>The information contained in this website is for professional investors and is only intended for professional investors as defined in your jurisdiction. Please read the relevant fund 
+documents for complete information. </p>
+			<p>The information on this website should neither be regarded as an offer nor a solicitation to buy, sell or otherwise deal with any investment referred to herein and is not intended for distribution to, or use by, any person in any country (including the United States) where the investment funds and services referred to are not authorised or registered for distribution or 
+in which the dissemination of information on the funds or services is forbidden. </p>
+			<p>The content of this website is based upon sources of information believed to be reliable. However, no guarantee, warranty or representation, express or implied, is given as to the accuracy or completeness of such information; and neither Dovetail Investment Management nor any of its officers, Directors, affiliates or employees accept any liability or responsibility in respect to the information or any recommendations expressed herein. The information in this website is subject to change without notice. 
+</p>
+		</div>
+	</div>
+	<div class="overlay-mu"></div>
+	<script src="js/jquery.2.1.1.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script>
+	$(function(){
+		$('#menu-toggle').click(function() {      
+			$(this).toggleClass('active-menu');
+	        $('.nav-menu').toggleClass('active-menu');
+	    });
+	    
+	    $('#disclaimer').click(function() {      
+	        $('.popup-muBg').show();
+	        $('.overlay-mu').show();
+			$('body').addClass('open-modal');
+	    });
+	    $('.close-icon').click(function() {      
+	        $('.popup-muBg').hide();
+	        $('.overlay-mu').hide();
+			$('body').removeClass('open-modal');
+	    });
+	});
+</script>	
+</body>
+</html>

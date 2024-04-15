@@ -1,0 +1,614 @@
+body {
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+	/*font-family: 'Cabin', sans-serif;*/
+} 
+a:hover, a:focus {
+	text-decoration: none;
+}
+.padd0 {
+	padding: 0px;
+}
+.open-modal {overflow: hidden;}
+/******header***********/
+.logo-mu {
+    float: left;
+    padding: 5px 0;
+}
+.headerTop {
+    background-color: rgba(244, 244, 244, 0.84);
+    padding: 15px 0;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    left: 0;
+    z-index: 9;
+} 
+.nav-menu {
+    float: right;
+    padding: 7px 0;
+}
+.nav-menu ul {
+	margin: 0px;
+	padding: 0px;
+}
+.nav-menu ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 6px 15px;
+}        
+.nav-menu ul li a {
+	color: #4d4d4d;
+	padding: 5px 10px;
+}
+.nav-menu ul li:last-child a {
+    padding: 8px 20px;
+    background-color: #c8e4c9;
+    border-radius: 50px;
+}  
+.nav-menu ul li.active-anc a {
+	border: 2px #c5e3c6 solid; 
+}
+#menu-toggle {
+    position: absolute;
+    right: 15px;
+    top: 3px;
+    display: none;
+}
+.content-pagemu {
+	position: relative;
+}
+.about-BgMu {
+    background-image: url(../images/about-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 165px 0 0;
+    background-position: center center;
+    top: 0px;
+}
+.team-BgMu {
+    background-image: url(../images/team-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 155px 0 0;
+    background-position: center center;
+    top: 0px;
+}
+.contact-BgMu { 
+    background-image: url(../images/contact-bg.png);
+    background-repeat: no-repeat;
+	background-size: cover;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 155px 0 0;
+    background-position: center center;
+    top: 0px;
+}
+.dovetailmu-text p {
+    font-size: 17px;
+    color: #4d4d4d;
+    line-height: 22px;
+    padding-right: 40px;
+    text-align: justify;
+}
+.dovetailmu-text h3 {
+	color: #333333;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0 0 65px;
+}  
+.dovetailmu-text span {
+    /*background-color: #cae5ca;*/
+    padding: 2px 7px;
+}
+.footer-bottom {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(234, 234, 234, 0.85);
+    padding: 8px 0;
+	float: left;
+}
+.footer-bottom p {
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+    color: #333333;
+}
+.disclaimer {
+    position: absolute;
+    right: 40px;
+    bottom: 55px;
+    cursor: pointer;
+} 
+.disclaimer p {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0px;
+}
+.popup-muBg {
+    width: 580px;
+    z-index: 1000;
+    top: 20%;
+    left: 0;
+    height: max-content;
+    position: fixed;
+    display: none;
+    margin: 0px auto;
+}
+.popup-muBg .mu-header {
+	background-color: #c8e4c9;
+}
+.popup-muBg .bodymu {
+	background-color: #c8e4c9;
+}
+.popup-muBg .modal-header {
+    border: 0px;
+    padding: 20px 40px 0px;
+    position: relative;
+}
+.modal-header h3 {
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    color: #6c7a6c;
+    letter-spacing: .4px;
+}
+.modal-header .close-icon {
+    position: absolute;
+    right: 38px;
+    top: 14px;
+}
+.modal-header .close-icon img {
+    width: 22px;
+}
+.bodymu {
+    padding: 10px 35px 12px;
+}
+.bodymu p {
+    color: #4d4d4d;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: justify;
+}
+.overlay-mu {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+	top: 0px;
+    background-color: rgba(244, 244, 244, 0.89);
+    z-index: 99;
+    display: none;
+}   
+
+
+
+/*****************TEAM********************/
+.image img {
+    width: 140px;
+}
+.team-BgMu .card {
+    background-color: transparent !important;
+    border: 0px; 
+}   
+.team-BgMu .nav {
+    display: block;
+    border-bottom: 0px;
+    width: 75%;
+}
+.team-BgMu .nav li {
+	display: inline-block;
+}
+.team-BgMu .nav li:last-child {
+	float: right;
+}
+.team-BgMu .dovetailmu-text h3 {
+    margin: 0 0 35px;
+}
+.card.teamProfile h2 {
+    color: #666666;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 15px 0 0px;
+    text-align: center;
+}
+.card.teamProfile span {
+    color: #666666;
+    font-size: 12px;
+    margin: 0 0 35px;
+    display: block;
+}
+.team-profile h4 {
+    color: #4a4a4a;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0px 0 18px;
+    text-transform: uppercase;
+}
+.dovetailmu-text .team-profile p {
+    font-size: 14px;
+    color: #242424;
+    line-height: 18px;
+    padding-right: 40px;
+    margin: 0 0 12px;
+    text-align: justify;
+    font-weight: 400;
+}
+/***************CONTACT*************************/
+.map-location {
+    margin: 0 0 32px;
+}
+.map-location img {
+    width: 220px;
+}
+.dovecontactmu-text p {
+    font-size: 15px;
+    color: #4d4d4d;
+    line-height: 22px; 
+    margin: 0 0 10px; 
+}
+.contact-BgMu .dovetailmu-text h3 {
+	margin: 0 0 35px; 
+}
+.contact-BgMu .dovetailmu-text p {
+    font-size: 17px;
+    color: #4d4d4d;
+    line-height: 22px;
+    padding-right: 40px;
+    font-weight: 400;
+    margin: 0 0 10px;
+}
+.contact-BgMu .dovetailmu-text p a {
+	color: #4d4d4d;
+}
+.teamProfile li .image {
+    margin-bottom: 4px;
+    border: solid 2px transparent;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.teamProfile li .active .image {
+	-webkit-filter: grayscale(0);
+    filter: grayscale(0);	
+}
+.team-BgMu .nav li a.active h2 {
+	color: #242424;
+}
+@media(max-width: 1024px) {
+	.team-BgMu {
+		background-image: none !important; 
+	}
+	.about-BgMu {
+	    background-image: none !important; 
+	}  
+	.contact-BgMu {
+	    background-image: none !important; 
+	}  
+}
+
+
+@media(min-width: 1439px) and (max-width: 1500px) {
+	.dovetailmu-text .team-profile p { 
+		padding-right: 65px;
+	}
+	.contact-BgMu .dovetailmu-text {
+		padding-right:40px;
+	}
+}
+
+@media(min-width: 0px) and (max-width: 991px) {
+	   
+	.nav-menu {
+		display: none;
+ 	} 
+	#menu-toggle {
+	    display: block;
+	}
+	.headerTop .nav-menu {
+		position: fixed;
+		display: none;
+		width: 100%;
+		top: 64px;
+		right: 0;
+		background-color: rgba(238, 236, 236, 0.97);
+		text-align: center;
+		height: 100%;
+		padding: 40px 0 0;
+	}
+	.nav-menu ul li {
+
+		display: block;
+		text-align: center;
+		margin: 22px 0 28px;
+		font-size: 20px;
+
+	}
+	.active-menu { 
+		display: block !important;
+	}
+	.team-BgMu {
+		padding: 115px 0 0;
+	}
+	.contact-BgMu {
+		padding: 115px 0 0;
+	}
+	.about-BgMu {
+		padding: 115px 0 0;
+	}
+	#menu-toggle {
+		top: 5px;
+	}
+	#menu-toggle .fa-bars {
+	    font-size: 24px;
+	}
+	#menu-toggle .fa-close {
+	    font-size: 26px;
+		display: none
+	}
+	.active-menu .fa-bars {
+		display: none;
+	}
+	#menu-toggle.active-menu .fa-close {
+		display: block !important;
+	}
+}
+@media(min-width: 0px) and (max-width: 767px) {
+	.footer-bottom {
+		position: inherit !important;
+	}
+	.contact-BgMu {
+		position: inherit !important;
+	}
+	.team-BgMu  {
+		position: inherit !important;
+	}
+	.disclaimer {
+		position: inherit !important;
+		float: right;
+		text-align: right;
+		
+		padding: 10px 15px 20px;
+	}
+	.dovetailmu-text .team-profile p {
+		padding-right: 0px;
+	}
+	.active-menu .fa-bars {
+			display: none;
+	}
+	.fa-close {
+		display: none;
+	}
+	
+}
+@media(min-width: 768px) and (max-width: 991px) {
+	.logo-mu img {
+		width: 350px;
+	}
+}
+@media(min-width: 576px) and (max-width: 991px) {
+	.logo-mu img {
+		width: 280px;
+	}
+	.headerTop {  
+	    top: 0px;
+    }
+	.dovetailmu-text p {
+	    font-size: 15px;
+	    line-height: 23px;
+	    padding-right: 0px;
+	}
+	.dovetailmu-text h3 {
+	    font-size: 20px;
+	    margin: 0 0 55px;
+	}
+	.dovetailmu-text span {
+	    padding: 5px 8px;
+	}
+	.footer-bottom p {
+	    font-size: 13px;
+	}
+}
+@media(min-width: 0px) and (max-width: 575px) {
+	.logo-mu img {
+		width: 240px;
+	}
+	.headerTop {
+		top: 0px;
+	}
+	.about-BgMu {
+		padding: 105px 0 0;
+	}
+	.team-BgMu {
+		padding: 105px 0 0;
+	}
+	.contact-BgMu {
+		padding: 105px 0 10px;
+	}
+	.dovetailmu-text p {
+	    font-size: 15px;
+	    line-height: 23px;
+	    padding-right: 0px;
+	    margin: 0 0 10px;
+	    text-align: justify;
+	}
+	.dovetailmu-text span {
+	    padding: 5px 8px;
+	}
+	.footer-bottom p {
+	    font-size: 13px;
+	}
+    .bodymu {
+	    padding: 10px 15px 12px;
+	}
+	.popup-muBg {
+	    width: 90%;
+	    top: 5%;
+    }
+	.dovetailmu-text h3 {
+		margin: 0 0 35px;
+	}
+	.team-BgMu .nav {
+		width: 100%;
+	}
+	.contact-BgMu .dovetailmu-text p {
+		font-size: 14px;
+		padding-right: 0px;
+		text-align: left;
+	}
+	.dovetailmu-text h3 {
+		font-size: 20px;
+	}
+	.map-location iframe {
+		width: 100%;
+	}
+	.mobabout {
+		position: absolute !important;
+		right: 0px !important;
+	}
+	.disclaimer {
+		bottom: 38px;
+	}
+	.popup-muBg {
+		height: 78vh;
+		overflow: auto;
+	}
+	.contact-BgMu .dovetailmu-text h3 {
+		margin: 0 0 53px;
+	}
+	.team-BgMu .nav li a.active h2 {
+		color: #242424;
+	}
+}
+@media(min-width: 376px) and (max-width: 575px) {
+	.logo-mu img {
+	    width: 240px;
+	}
+	#menu-toggle .fa-bars {
+	    font-size: 24px;
+	}
+	#menu-toggle .fa-close {
+	    font-size: 26px;
+	}
+	#menu-toggle {
+	    top: 5px;
+	}
+	.about-BgMu {
+	    padding: 120px 0 0;
+	}
+	.dovetailmu-text h3 {
+	    font-size: 18px;
+	    margin: 0 0 42px;
+	}
+	.dovetailmu-text p {
+	    font-size: 14px;
+	    line-height: 22px;
+	}
+	.modal-header h3 {
+	    font-size: 15px;
+	}
+	.bodymu p {  
+	    font-size: 13px;
+	    margin: 0 0 10px;
+	    line-height: 16px;
+	}
+	.modal-header .close-icon {
+	    right: 18px;
+	    top: 16px;
+	}
+	.modal-header .close-icon img {
+	    width: 18px;
+	}
+	.disclaimer {
+	    right: 20px;
+	    bottom: 49px;
+	}
+	.disclaimer p {
+	    font-size: 14px;
+	}
+}
+@media(min-width: 0px) and (max-width: 375px) {
+	.modal-header .close-icon img {
+	    width: 18px;
+	}
+	.modal-header .close-icon {
+	    right: 18px;
+	    top: 18px;
+	}
+	.card.teamProfile span {
+	    font-size: 11px;
+	    margin: 0 0 25px;
+	}
+	.image img {
+	    width: 128px;
+	}
+	.card.teamProfile h2 {
+    	font-size: 15px;
+	}
+}
+@media(min-width: 0px) and (max-width: 330px) {
+	.logo-mu img {
+	    width: 240px;
+	}
+	#menu-toggle .fa-bars {
+		font-size: 22px;
+	}
+	#menu-toggle .fa-close {
+	    font-size: 24px;
+	}
+	#menu-toggle {
+	    top: 2px;
+	}
+	.about-BgMu {
+	    padding: 85px 0 0;
+	}
+	
+	
+	.dovetailmu-text h3 {
+	    font-size: 18px;
+	    margin: 0 0 22px;
+	}
+	.dovetailmu-text p {
+	    font-size: 13px;
+	    line-height: 19px;
+	}
+	.footer-bottom p {
+	    font-size: 12px;
+	}
+	.disclaimer {
+	    right: 20px;
+		bottom: 25px;
+	}
+	.logo-mu {
+		padding: 0px 0;
+	}
+	.disclaimer p {
+		font-size: 13px;
+	}
+	.headerTop .nav-menu {
+		top: 54px !important;
+	}
+}
