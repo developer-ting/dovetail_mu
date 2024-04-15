@@ -218,6 +218,7 @@ a:hover, a:focus {
 }
 .team-BgMu .nav li {
 	display: inline-block;
+	width: 33%;
 }
 /* .team-BgMu .nav li:last-child {
 	float: right;
@@ -235,7 +236,7 @@ a:hover, a:focus {
 .card.teamProfile span {
     color: #666666;
     font-size: 12px;
-    margin: 0 0 35px;
+    margin: 0 0 5px;
     display: block;
 }
 .team-profile h4 {
