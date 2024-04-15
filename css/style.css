@@ -212,16 +212,16 @@ a:hover, a:focus {
     border: 0px; 
 }   
 .team-BgMu .nav {
-    display: block;
+    /* display: block; */
     border-bottom: 0px;
     width: 75%;
 }
 .team-BgMu .nav li {
 	display: inline-block;
 }
-.team-BgMu .nav li:last-child {
+/* .team-BgMu .nav li:last-child {
 	float: right;
-}
+} */
 .team-BgMu .dovetailmu-text h3 {
     margin: 0 0 35px;
 }
@@ -281,6 +281,9 @@ a:hover, a:focus {
 .contact-BgMu .dovetailmu-text p a {
 	color: #4d4d4d;
 }
+.contact-BgMu .address {
+	width: 80%;
+}
 .teamProfile li .image {
     margin-bottom: 4px;
     border: solid 2px transparent;
@@ -307,7 +310,10 @@ a:hover, a:focus {
 	}  
 	.contact-BgMu {
 	    background-image: none !important; 
-	}  
+	} 
+	.contact-BgMu .address {
+		width: 100%;
+	} 
 }
 
 
@@ -401,6 +407,10 @@ a:hover, a:focus {
 	}
 	.fa-close {
 		display: none;
+	}
+
+	.team-BgMu .nav li {
+		width: 48%;
 	}
 	
 }
